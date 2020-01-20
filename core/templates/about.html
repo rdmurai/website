@@ -1,0 +1,32 @@
+{% load static %}
+{% load mathfilters %}
+ <section id="about" class="section-padding">
+    <div class="about-area section-padding bg-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-xs-12 info">
+            <div class="about-wrapper wow fadeInLeft" data-wow-delay="0.3s">
+              <div>
+                <div class="site-heading">
+                  <p class="mb-3">Quem sou eu?</p>
+                  <h2 class="section-title">Um pouco da minha história</h2>
+                </div>
+                <div class="content">
+                  <p>
+                    {% now "Y" as current_year %}
+                    Tenho {{ current_year | sub:1984 }} anos, e trabalhei na área bancária a quase 20 anos desenvolvendo sistemas em Mainframe utilizando Cobol. Depois de tanto tempo na área bancária, decidi que era hora de procurar novas tecnologias e desafios e, a Web, foi uma das que mais me chamam atenção.<br>
+                    Fiz algumas pesquisas e decidi aprender Python que, além de ser umas das linguagens que mais cresce no mundo, a curva de aprendizado é muito menor do que outras linguagens.<br>
+                    Tem alguma pergunta? Entre em contato!
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-xs-12 wow fadeInRight" data-wow-delay="0.3s">
+            <img class="img-fluid" src="{% static 'img/about/img-1.png' %}" alt="" >
+          </div>
+        </div>
+      </div>
+    </div>
+ </section>
